@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.na{
+  display: flex;
+  float: left;
+  position: relative;
+  padding: 10px;
+  right: 280px;
+}
+ul, li{
+  list-style: none;
+}
+header {	
+background:-webkit-linear-gradient(rgba(255,255,255,1) 50px,wheat 50px);
+transition: 0.3s ease-in;
+height:50px;
+overflow:hidden;
+}
+nav {
+  width:960px; 
+  margin:0 auto;
+  text-align: center;
+}
+nav > ul > li {
+  float:left; 
+  line-height:50px;
+  margin-right:50px; 
+  position: relative;
+  text-decoration: underline;
+  text-underline-position : under;
+  font-weight: bold;
+  font-size: 25px;
+  left: -250px;
+}
+nav > ul > li a:hover{
+  color: rgb(55, 55, 198);
+}
+nav > ul > li ul{ 
+  width:100%; 
+  opacity:0; 
+  position: absolute; 
+  transition:0.3s 0.2s;
+}
+nav > ul > li ul li{
+  white-space:nowrap;
+  text-decoration: underline;
+  text-underline-position : under;
+}
+nav > ul > li ul li a:hover{
+  color: #ff7200;
+}
+nav > ul > li:hover ul{
+  opacity:1;
+}
+nav > ul > li ul li:hover{
+  color: rgb(55, 55, 198);
+}
+.login-id-wrap{
+  margin: 0px 10px 8px 10px;
+  padding: 10px;
+  border: solid 1px #dadada;
+  background: #fff;
+}
+/*input 아이디 form*/
+.input-id{
+  border: none;
+  outline:none;
+  width:100%;
+}
+/*input 패스워드박스*/
+.login-pw-wrap{
+
+  margin: 0px 10px 8px 10px;
+  padding: 10px;
+  border: solid 1px #dadada;
+  background: #fff;
+}
+/*input 패스워드 form*/
+.input-pw{
+  border: none;
+  outline:none;
+  width:100%;
+}
+.login-btn-wrap{
+  height: 52px;
+  line-height: 55px;
+  margin: 0px 10px 8px 10px;
+  border: solid 1px rgba(0,0,0,.1);
+  background-color: rgb(55, 55, 198);
+  color: #fff;
+  cursor: pointer;
+}
+/*로그인버튼*/
+.login-btn{
+  width:100px;
+  background-color: rgb(55, 55, 198);
+  border: none;
+  color:#fff;
+  font-size: 18px;
+  outline:none;
+  cursor: pointer;
+}
+.login-btn1{
+  border: none;
+  font-size: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+/*로그인 아래 박스*/
+.under-login{
+  height: 50px;
+  border-bottom: 1px solid gainsboro;
+  margin: 0px 10px 35px 10px;
+}
+#app {
+  background-color: aliceblue;
+}
+.ap{
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  color: black;
+  position: absolute;
+}
+
+.buttons{
+  background-image: url(hp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5000px;
+  height: 750px; 
+  
+}
+.buttons li{
+  list-style: none;
+  margin: 20px;
+  float: left;
+  position: relative;
+  top: 100px;
+  left: 250px;
+  z-index: 1;
+}
+.button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(217, 234, 233);
+  border: solid 5px gainsboro;
+  border-radius: 17px ;
+}
+.mgimage{
+  position: absolute;
+  top:300px;
+  right: 700px;
+  z-index: 1;
+}
+.button:hover{
+  background-color: rgb(217, 234, 233);
+  color: rgb(55, 55, 198);
+}
+
+
+.menu-button:hover{
+  color: rgb(55, 55, 198);
+  text-decoration: underline;
+  text-underline-position : under;
+}
+
+
+
+
+.form{
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top),rgba(0,0,0,0,8)50%,rgba(0,0,0,0,8)50%;
+  position: absolute;
+  top: -20px;
+  right: 200px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.form h2{
+  width: 220px;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(55, 55, 198);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.search{
+  padding: 5px;
+  margin: auto;
+}
+#menu-su {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  overflow-y: auto;
+  height: 100%;
+}
+.login-btn1{
+  position: relative;
+  top: -10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.login-btn1 :hover{
+  color:  white;
+  background-color:rgb(55, 55, 198);
+  cursor: pointer;
+}
+
+.menu-button {
+  background-color: transparent;
+  display: flex;
+  border: 0;
+  gap: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu-button:active {
+  background-color: rgb(204, 204, 204);
+}
+.icon1{
+padding: 10px;
+}
+.menu-sub {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+}
+.menu-sub-item a {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  padding: 1rem 1rem 1rem 3rem;
+  font-weight: normal;
+}
+.menu-sub-item a:active {
+  background-color: rgb(204, 204, 204);
+}
+.menu-toggle {
+  position: absolute;
+  right: -40px;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.menu-toggle:active {
+  background-color: black;
+  color: White;
+}
+
+.dim-layer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.dim-layer.active {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

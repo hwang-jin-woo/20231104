@@ -1,0 +1,10 @@
+<React hook> 후크?갈고리..
+
+상태관리 등록 함수
+useState()
+특정상태가 변경되엇을 경우에만 불리는 함수
+useEffect()
+
+useRef()
+
+useContext()

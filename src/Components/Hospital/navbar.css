@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.na{
+  display: flex;
+  float: left;
+  position: relative;
+  padding: 10px;
+
+}
+ul, li{
+  list-style: none;
+}
+header {	
+background:-webkit-linear-gradient(rgba(255,255,255,1) 50px,wheat 50px);
+transition: 0.3s ease-in;
+height:50px;
+overflow:hidden;
+}
+nav {
+
+  margin:0 auto;
+  text-align: center;
+}
+nav > ul > li {
+  position: relative;
+  text-decoration: underline;
+  text-underline-position : under;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+nav > ul > li a:hover{
+  color: rgb(55, 55, 198);
+}
+nav > ul > li ul{ 
+
+  opacity:0; 
+  position: absolute; 
+  transition:0.3s 0.2s;
+}
+nav > ul > li ul li{
+  white-space:nowrap;
+  text-decoration: underline;
+  text-underline-position : under;
+}
+nav > ul > li ul li a:hover{
+  color: #ff7200;
+}
+nav > ul > li:hover ul{
+  opacity:1;
+}
+nav > ul > li ul li:hover{
+  color: rgb(55, 55, 198);
+}
+
+.srch{
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
+.btn:focus{
+  outline: none;
+}
+.srch:focus{
+  outline: none;
+}
+
+.form{
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top),rgba(0,0,0,0,8)50%,rgba(0,0,0,0,8)50%;
+  position: absolute;
+  top: -20px;
+  right: 200px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.form h2{
+  width: 220px;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(55, 55, 198);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.search{
+  padding: 5px;
+  margin: auto;
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 100vh;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  transition: all 300ms ease-in;
+  transform: translateX(-100%);
+  z-index: 10;
+  font-weight: bold;
+  
+}
+.menu-button:hover{
+  color: rgb(55, 55, 198);
+  text-decoration: underline;
+  text-underline-position : under;
+}
+
+#sidebar ul>li>a{
+  font-weight: bold;
+  font-size: 18px;
+}
+#sidebar ul>li a:hover{
+  color: #ff7200;
+  text-decoration: underline;
+  text-underline-position : under;
+}
+#sidebar.active {
+  left: 0;
+}
+

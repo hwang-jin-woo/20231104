@@ -1,0 +1,5 @@
+www.gameshop.com/products.id
+1.주소에서 products/뒤에 무언가 더 있으면
+그것을 id로 인식하자
+2.id가 올바른지 여부는 해당 컴포넌트에게 위임하자
+

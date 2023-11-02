@@ -1,0 +1,42 @@
+나중에 git같은대서 다운받고 터미널에서 npm install해줘야함
+react dom-가상돔(react만 씀)자체적으로 나중에 real dom으로 바꾸어줌
+    "start": "react-scripts start",-개발단계
+    "build": "react-scripts build",-완성품
+eslintConfig-문법 에러 잡아줌(디버깅용)
+
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  }, 종속성
+
+npm start-리액트 시작
+
+npm i styled-components
+
+JSX 문법(JavaScript XML)
+:HTML문법처럼 생긴 자바스크립트 문법
+함수의 리턴구문에서 쓰일수있음
+
+
+리액트의 Component(컴포넌트)
+1.자바스크립트 함수
+2.리턴형이 JSX
+3.반드시 대문자로 시작!
+4.함수처럼 파라미터를 받을수있음
+5.함수처럼 호출하는게 아니고 JSX상에서 태그형태로 사용한다.
+
+jsx문법
+1.반드시 <></>이름이 없는 빈태그 추가해야한다.
+하나의 부모태그
+
+2. 자바스크립트 문법쓰려면 중괄호{}쓴다
+
+
+3.class말고 className으로 써야한다.
+
+4.인라인 스타일에서 style은 객체로 전달해야되서 {{}},해야한다. 그리고 -못쓴다. 대신 camelCase로 쓴다
