@@ -2,7 +2,7 @@
 import { createGlobalStyle } from "styled-components"
 // import { GameShop } from "./Components/GameShop/GameShop";
 //import { MovieShop } from "./Components/MovieShop/MovieShop";
-import { Hospital } from "./Components/Hospital/Hospital";
+import { Hospital } from "./Components/Hospital/Hospital";    
 // import { List } from "./Components/1006/List"
 // import { Avatar } from "./Components/1006/Avatar"
 //import { Session } from "./Components/1005/Session"
